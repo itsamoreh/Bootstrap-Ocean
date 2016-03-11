@@ -183,7 +183,7 @@ li {
 }
 .label {
 	font-family: "Roboto Condensed",sans-serif;
-	background-color: #F18F01;
+	background-color: #006E90;
 }
 .skills-list {
 	color: #000;
@@ -204,7 +204,7 @@ li {
 }
 #contact {
 	width: 100%;
-	background-color: #9fc160;
+	background-color: #006E90;
 }
 #center-contact {
 	text-align: center;
@@ -217,14 +217,19 @@ li {
 	width: 18vw;
 	padding: 10px;
 	cursor: pointer;
+	width: 20vh;
+	/*
 	animation-name: socialExpand;
 	animation-fill-mode: forwards;
 	animation-duration: 1s;
+	*/
 }
+/*
 @keyframes socialExpand {
 		0% 	{width: 5vh;}
 		100% 	{width: 20vh;}
 }
+*/
 @media screen and (max-width: 480px) {
 	@keyframes socialExpand {
 		0% 	{width: 5vw;}

@@ -1,0 +1,248 @@
+html, body {
+	position: relative;
+	font-family: "Roboto Slab",sans-serif;
+	color: #000;
+	margin: 0 auto;
+	height: 100%;
+}
+#sitecontainer {
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+.navbar {
+	margin: 0;
+	border: none;
+	background-color: transparent;
+}
+.navbar-opaque {
+	margin: 0;
+	border: none;
+	animation-name: navbar-opaque;
+	animation-fill-mode: forwards;
+	animation-duration: 2s;
+}
+@keyframes navbar-opaque {
+	0% 	{	background-color: transparent;}
+	100% 	{	background-color: #006E90;}
+}
+@-webkit-keyframes navbar-opaque {
+	0% 	{	background-color: transparent;}
+	100% 	{	background-color: #006E90;}
+}
+#navbar > ul > li > a {
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+}
+#navbar > ul > li.active > a {
+	color: #006E90;
+}
+#navbar > ul > li > a:hover {
+	color: #006E90;
+}
+.row {
+	width: 100%;
+	margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Roboto",sans-serif;
+}
+.title-heading {
+	top: 50%;
+	font-size: 5vh;
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+}
+li {
+	font-family: "Roboto Slab",sans-serif;
+}
+.section {
+	padding: 10vh;
+}
+@media screen and (max-width: 480px) {
+    .section {
+	       padding: 12vh .5vh;
+    }
+}
+.tooltip-inner {
+	font-family: "Roboto","Arial",sans-serif;
+}
+
+/* Home */	
+	
+#home {
+	background-image: url("img/sky.jpe");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #184b88;
+	position: relative;
+	padding-top: 14vh;
+	width: 100%;
+	min-height: 100%;
+}
+#center-home {
+	text-align: center;
+	padding-top: 0.5vh;
+}
+#circle-profile-pic {
+	/* width: 28vh; */
+}
+#name-large {
+	font-size: 8vh;
+	font-weight: 700;
+	color: #fff;
+}
+#it-professional {
+	font-family: "Roboto Condensed",sans-serif;
+	font-size: 5vh;
+	font-weight: 300;
+	color: #fff;
+	padding-top: 4vh;
+}
+@keyframes arrow-pulse {
+	0% 	{opacity: 1;}
+	50%	{opacity: .45;}
+	100% 	{opacity: 1;}
+}
+@-webkit-keyframes arrow-pulse {
+	0% 	{opacity: 1;}
+	50%	{opacity: .45;}
+	100% 	{opacity: 1;}
+}
+#down-arrow {
+	color: #fff;
+	padding-top: 10vh;
+	font-size: 4vh;
+	animation-name: arrow-pulse;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+/* About */
+
+#about {
+}
+#facts-heading {
+	font-size: 26px;
+}
+#facts-list {
+	font-size: 20px;
+	font-weight: 500;
+	color: #000;
+	padding-left: 22px;
+}
+#about-heading {
+	font-size: 26px;
+	padding-top: 60px;
+}
+
+/* Resume */
+
+#resume-title-div {
+	height: 50vh;
+	width: 100%;
+	background-image: url("img/computer.jpe");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: table;
+
+}
+#resume {
+}
+.resume-section {
+	padding: 35px 0px;
+}
+.resume-section-heading {
+	font-family: "Roboto Condensed",sans-serif;
+	margin-top: 0px;
+	font-size: 20px;
+	padding-bottom: 25px;
+}
+#first-resume-work-section {
+	padding-top: 0px;
+}
+.resume-work-section {
+	padding: 20px 0px;
+}
+.resume-work-section-list {
+	padding: 3vh 15px;
+}
+.first-resume-header {
+	margin-top: 0px;
+}
+.resume-h4 {
+	font-family: "Roboto Condensed",sans-serif;
+}
+.resume-h4 small {
+	color: #000;
+	font-family: "Roboto Condensed",sans-serif;
+}
+.label {
+	font-family: "Roboto Condensed",sans-serif;
+	background-color: #F18F01;
+}
+.skills-list {
+	color: #000;
+	padding: 3vh 15px;
+}
+
+/* Contact */
+
+#contact-title-div {
+	height: 50vh;
+	width: 100%;
+	background-image: url("img/calendar.jpe");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: table;
+}
+#contact {
+	width: 100%;
+	background-color: #9fc160;
+}
+#center-contact {
+	text-align: center;
+	width: 100hw;
+}
+#social-container {
+	height: 24vh;
+}
+.social {
+	width: 18vw;
+	padding: 10px;
+	cursor: pointer;
+	animation-name: socialExpand;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+}
+@keyframes socialExpand {
+		0% 	{width: 5vh;}
+		100% 	{width: 20vh;}
+}
+@media screen and (max-width: 480px) {
+	@keyframes socialExpand {
+		0% 	{width: 5vw;}
+		100% 	{width: 25vw;}
+	}
+}
+.social:hover {
+	opacity: .95;
+}
+.social-a {
+	display: inline-block;
+	margin: 1vh 0;
+}
+.contact-text {
+	color: #FFF;
+	font-size: 2.5vh;
+	padding: 1vh 0;
+}
+.contact-text > a {
+	color: #FFF;
+}

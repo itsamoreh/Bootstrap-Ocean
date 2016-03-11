@@ -1,3 +1,3 @@
-# personal-site
-my personal website
 # amorkumar.com
+my personal website
+visit it at http://amorkumar.com

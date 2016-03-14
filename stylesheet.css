@@ -29,7 +29,7 @@ html, body {
 	0% 	{	background-color: transparent;}
 	100% 	{	background-color: #006E90;}
 }
-a:active, a:visited, a:hover, a:link {
+a:link, a:visited, a:hover, a:active {
 	outline: 0;
 }
 #navbar > ul > li > a {

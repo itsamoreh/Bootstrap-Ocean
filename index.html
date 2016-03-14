@@ -44,8 +44,8 @@
 					<ul class="nav navbar-nav">
 						<li><a href="#home">AMOR KUMAR</a></li>
 						<li><a href="#about">ABOUT</a></li>
-						<li><a href="#resume-title-div">RESUME</a></li>
-						<li><a href="#contact-title-div">CONTACT</a></li>
+						<li><a href="#resume">RESUME</a></li>
+						<li><a href="#contact">CONTACT</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
@@ -86,10 +86,10 @@
 					</div>
 				</div>
 			</div>
-			<div id="resume-title-div" class="text-center">
+			<div id="resume" class="text-center">
 				<h1 class="title-heading">WORK EXPERIENCE & SKILLS</h1>
 			</div>
-			<div id="resume" class="container section">
+			<div id="resume-contents" class="container section">
 				<div class="row resume-section">
 					<div class="col-sm-2 col-sm-offset-1">
 						<h1 class="resume-section-heading">WORK EXPERIENCE</h1>
@@ -191,10 +191,10 @@
 					</div>
 				</div>
 			</div>
-			<div id="contact-title-div" class="text-center">
+			<div id="contact" class="text-center">
 				<h1 class="title-heading">GET IN TOUCH</h1>
 			</div>
-			<div id="contact" class="container section">	
+			<div id="contact-contents" class="container section">	
 				<div class="row">
 					<div id="center-contact" class="col-sm-12">
 						<h2 class="contact-text">Have any questions? Want to chat about a project?</h2>
@@ -224,14 +224,13 @@
 		<script>
 
 			// Check if scroll at top for navbar opacity
-			function opaqueNav() {
-				if($(window).scrollTop() != 0) {
+			$(window).scroll(function() {
+				if($(window).scrollTop() > 75) {
 					$('.navbar').addClass('navbar-opaque');
 				} else {
 					$('.navbar').removeClass('navbar-opaque');
 				}
-			}
-			$(window).on("scroll", opaqueNav);
+			});
 
 			// Smooth scroll to anchor
 			$('a').click(function(){

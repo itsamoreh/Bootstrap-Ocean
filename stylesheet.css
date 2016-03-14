@@ -29,7 +29,7 @@ html, body {
 	0% 	{	background-color: transparent;}
 	100% 	{	background-color: #006E90;}
 }
-a:active, a:visited {
+a:active, a:visited, a:hover, a:link {
 	outline: 0;
 }
 #navbar > ul > li > a {
@@ -156,7 +156,7 @@ li {
 
 /* Resume */
 
-#resume-title-div {
+#resume {
 	height: 50vh;
 	width: 100%;
 	background-image: url("img/computer.jpe");
@@ -167,8 +167,6 @@ li {
 	position: relative;
 	display: table;
 
-}
-#resume {
 }
 .resume-section {
 	padding: 4vh 0;
@@ -209,7 +207,7 @@ li {
 
 /* Contact */
 
-#contact-title-div {
+#contact {
 	height: 50vh;
 	width: 100%;
 	background-image: url("img/calendar.jpe");
@@ -220,7 +218,7 @@ li {
 	position: relative;
 	display: table;
 }
-#contact {
+#contact-contents {
 	width: 100%;
 	background-color: #006E90;
 }

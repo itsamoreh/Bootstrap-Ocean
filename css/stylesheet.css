@@ -99,7 +99,7 @@ NAVBAR
 	background-color: transparent; 
 }
 
-.social {
+#social {
 	position: fixed;
 	top: 50%;
 	margin-top: -75px;
@@ -111,10 +111,10 @@ NAVBAR
 .social-inner {
 	margin: auto;
 }
-.social span {
+#social span {
 	display: block;
 }
-.social span i:hover {
+.social-inner span i:hover {
 	color: #81A2BE;
 }
 
@@ -222,40 +222,70 @@ header {
 	background-color: #81A2BE;
 }
 
+/*
+	CONTACT
+*/
+
+#social2 {
+	display: none;
+}
+
 .form-container {
 	margin-top: 30px;
 }
+
 .form-container p {
 	font-size: 20px;
 }
+
 .form-group label {
 	font-size: 20px;
 	text-align: right;
 	width: 100%;
 	padding-bottom: 15px;
 }
+
 .form-control::-moz-placeholder {
 	color: #DDE1E4;
 	opacity: .5;
 }
+
 .form-control:focus {
 	outline: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-color: #81A2BE;
 }
+
 .form-control {
 	color: #DDE1E4;
 	background-color: #1D1F21;
 	border-radius: 0;
 }
+
 .control-label {
 	text-align: left !important;
 }
+
 .send i {
 	padding-right: 10px;
 }
 
 footer {
 	font-size: 8px;
+}
+
+@media (max-width: 480px) {
+	.section {
+		padding: 40px 8px;
+	}
+	#social {
+		display: none;
+	}
+	#social2 {
+		display: block;
+	}
+	#social2 span {
+		margin: 5px 10px;
+	}
 }

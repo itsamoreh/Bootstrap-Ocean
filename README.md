@@ -1,4 +1,4 @@
-# amorkumar.com
-my personal website
+# Bootstrap-Ocean
+Bootstrap template
 
-visit it at http://amorkumar.com
+![Alt text](img/fullpageScreenshot.png?raw=true "Title")

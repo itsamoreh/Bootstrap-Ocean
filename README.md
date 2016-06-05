@@ -1,4 +1,6 @@
 # Bootstrap-Ocean
-Bootstrap template
 
-![Alt text](img/fullpageScreenshot.png?raw=true "Title")
+Bootstrap portfolio for the Freecodecamp challenge "Build a Personal Portfolio Webpage"
+
+# screenshot
+![screenshot](img/fullpageScreenshot.png)
